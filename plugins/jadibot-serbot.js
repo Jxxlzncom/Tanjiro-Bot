@@ -242,7 +242,7 @@ const mensajeNotificacion = `
 │ ୨୧ *Número:* +${path.basename(pathYukiJadiBot)}
 │ ✿ *Nombre:* ${userName}
 │    
-├─ "Hanako-san, Hanako-san... ¿Estás ahí?"
+├─ "ᴛᴀɴᴊɪʀᴏ, ᴛᴀɴᴊɪʀᴏ... ¿Estás ahí?"
 │ *Los Siete Misterios de la Escuela Kamome*
 │    
 ╰─「 ⋆｡˚☽˚｡⋆ ✧ ⋆｡˚☽˚｡⋆ 」─╯
