@@ -15,7 +15,7 @@ const handler = async (m, { conn, text }) => {
 
         let decorado = `✎ 𝙂𝙞𝙛𝙨 𝙙𝙚 𝙩𝙖𝙣𝙟𝙞𝙧𝙤-𝙗𝙤𝙩 ✎\n\n`
         decorado += `Hola jeje ^^ Aquí tienes tus gifs sobre: *${text}* UwU\n\n`
-        decorado += `> Hecho por *_ᴅᴀʀᴋ ʙʀxᴢᴢᴢ <3_*\n\n`
+        decorado += `> Hecho por *_ᴅᴀʀᴋ ʙʀxᴢᴢᴢ_*\n\n`
         decorado += `~*Encontré ${gifs.length} gifs super lindos para ti*~\n\n`
 
         gifs.forEach((url, i) => {
