@@ -33,7 +33,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 🌸 *Jugadores:* ${online}/${max}
 🌸 *Latencia:* ${latency} ms
 
-> Hecho por SoyMaycol <3
+> Dark Brxxzzz
 
 ╰─━━━✧⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑━━━─╯`
 
