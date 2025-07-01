@@ -305,7 +305,7 @@ async function eliminarMensaje(m, conn, isBotAdmin, razon) {
         }
         
         // Mensaje de advertencia
-        const advertencia = `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+        const advertencia = `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ 🚫 *Se ha detectado un acto prohibido en este reino...*
 │
