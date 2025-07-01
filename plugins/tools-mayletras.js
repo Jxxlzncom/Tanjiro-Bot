@@ -29,8 +29,8 @@ let handler = async (m, { conn, args }) => {
     await conn.sendMessage(m.chat, { text: mensaje }, { quoted: m })
 }
 
-handler.help = ['mayletras artista | canción']
+handler.help = ['darkletras artista | canción']
 handler.tags = ['tools']
-handler.command = ['mayletras']
+handler.command = ['darkletras']
 
 export default handler
