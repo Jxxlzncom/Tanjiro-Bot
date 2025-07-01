@@ -31,7 +31,7 @@ return
 if (global.conn.user.jid !== conn.user.jid) {
 return conn.sendMessage(m.chat, {text: `❌ Usa este comando con el *Bot Principal*\n\n➡️ https://wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix + command}`}, { quoted: m })
 } else {
-await conn.sendMessage(m.chat, { text: `☁️ La sesión como *Sub-Bot* ha sido eliminada por Hanako.` }, { quoted: m })
+await conn.sendMessage(m.chat, { text: `☁️ La sesión como *Sub-Bot* ha sido eliminada por 𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓.` }, { quoted: m })
 }
 try {
 fs.rmdir(`./${jadi}/` + uniqid, { recursive: true, force: true })
@@ -84,7 +84,7 @@ const replyMessage = message.length === 0
 ? `✖️ No hay *Sub-Bots* conectados con la Academia Kamome...`
 : message;
 
-const responseMessage = `✎ 𝐋𝐢𝐬𝐭𝐚 𝐃𝐞 𝐇𝐚𝐧𝐚𝐤𝐨-𝐁𝐨𝐭𝐬 ✎\n\nHola Jeje ^^ Estos son las personas que me tienen a mi jeje <3\n\n> Hecho por *_${global.apodo}_*\n\nSi Quieres puedes hacerte Hanako-Bot con #code o #qr jeje ^^\n\n~*Estas lindas personitas me tienen jeje <3 en cual en total son ${users.length || '0'}*~\n\n${replyMessage}`;
+const responseMessage = `✎ 𝙇𝙞𝙨𝙩𝙖 𝙙𝙚 𝙩𝙖𝙣𝙟𝙞𝙧𝙤-𝙗𝙤𝙩 ✎\n\nHola Jeje ^^ Estos son las personas que me tienen a mi jeje <3\n\n> Hecho por *_${global.apodo}_*\n\nSi Quieres puedes hacerte 𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 con #code o #qr jeje ^^\n\n~*Estas lindas personitas me tienen jeje <3 en cual en total son ${users.length || '0'}*~\n\n${replyMessage}`;
 await _envio.sendMessage(m.chat, {text: responseMessage, mentions: _envio.parseMention(responseMessage)}, {quoted: m})
 break
 }
