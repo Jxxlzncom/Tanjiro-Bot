@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
 │    
 ├─ El hechizo *#darkultra* no existe en los registros del más allá.    
 │    
-├─ ¿Quisiste decir *#mayletras*?    
+├─ ¿Quisiste decir *#darkletras*?    
 │   ⇝ *#help*    
 ╰─✦`, m)
 
