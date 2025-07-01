@@ -31,7 +31,7 @@ let handler = async (m, { conn, args, command, usedPrefix, text }) => {
   switch (command) {
 
     case 'setname': {
-      if (!text) return conn.reply(m.chat, `🌙 Debes decir el nuevo nombre\nEjemplo: *${usedPrefix + command} Hanako-KunBot*`, m)
+      if (!text) return conn.reply(m.chat, `🌙 Debes decir el nuevo nombre\nEjemplo: *${usedPrefix + command} Tanjiro-Bot*`, m)
 
       editarSettings(/global\.namebotttt\s*=\s*['"].*?['"]/, `global.namebotttt = '${text}'`)
       editarSettings(/global\.namebot\s*=\s*['"].*?['"]/, `global.namebot = '${text}'`)
