@@ -129,7 +129,7 @@ let handler = async (m, { conn, args, command, isPrems }) => {
 ║ ➤ ${usedPrefix}dungeon
 ║
 ╚══════════════════════
-> Hecho por SoyMaycol <3`
+> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ`
   
   //━━━━━━━━━[ PROCESAMIENTO DE COMANDOS ]━━━━━━━━━//
   
