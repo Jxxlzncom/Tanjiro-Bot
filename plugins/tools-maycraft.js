@@ -26,14 +26,14 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
     let img = jsonImg?.data?.length ? jsonImg.data[Math.floor(Math.random() * jsonImg.data.length)].url : null
 
     let msg = `
-╭─━━━✧⭑⭑⭑『 𝑯𝒂𝒏𝒂𝒌𝒐 𝑲𝒖𝒏 ~ 𝑴𝒂𝒚𝑪𝒓𝒂𝒇𝒕 』⭑⭑⭑✧━━━─╮
+╭─━━━✧⭑⭑⭑『 𝐓𝐀𝐍𝐉𝐈𝐑𝐎-𝐁𝐎𝐓 ~ 𝙈𝙖𝙮𝙘𝙧𝙖𝙛𝙩 』⭑⭑⭑✧━━━─╮
 
 🌸 *Servidor:* ${text}
 🌸 *Versión:* ${version}
 🌸 *Jugadores:* ${online}/${max}
 🌸 *Latencia:* ${latency} ms
 
-> Dark Brxxzzz
+> ᴅᴀʀᴋ ʙʀxᴢᴢᴢ
 
 ╰─━━━✧⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑━━━─╯`
 
