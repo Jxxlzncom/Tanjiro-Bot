@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!isOwner) {
         // Solo funciona en los reinos grupales
         if (!m.chat.includes('@g.us') && !m.chat.includes('@lid')) {
-            return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+            return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ❌ Este hechizo solo funciona en grupos.
 ╰─✦`, m)
@@ -22,7 +22,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         try {
             let groupMetadata = await conn.groupMetadata(m.chat)
             if (!groupMetadata || !groupMetadata.participants) {
-                return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+                return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ⚠️ No pude descifrar los registros mágicos del grupo, inténtalo otra vez.
 ╰─✦`, m)
@@ -37,7 +37,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             
         } catch (error) {
             console.error('Error mágico:', error)
-            return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+            return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ⚠️ Los poderes se debilitaron al intentar verificar los permisos.
 ╰─✦`, m)
@@ -45,7 +45,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
     
     if (!isAdmin && !isOwner) {
-        return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+        return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ❌ Solo los guardianes (admins) o el supremo (owner) pueden invocar este conjuro.
 ╰─✦`, m)
@@ -60,7 +60,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let action = args[0]?.toLowerCase()
     
     if (!action || (action !== 'on' && action !== 'off')) {
-        return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+        return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ 📜 *Uso del hechizo:*
 │   ⇝ ${usedPrefix}${command} on - Activar el escudo Anti-NSFW
@@ -72,14 +72,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     if (action === 'on') {
         if (chat.antiNsfw) {
-            return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+            return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ⚠️ El escudo mágico Anti-NSFW ya está activo protegiendo este reino.
 ╰─✦`, m)
         }
         
         chat.antiNsfw = true
-        await conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+        await conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ✅ *Escudo Anti-NSFW Activado*
 │
@@ -93,14 +93,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         
     } else if (action === 'off') {
         if (!chat.antiNsfw) {
-            return conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+            return conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ⚠️ El escudo Anti-NSFW ya estaba desactivado.
 ╰─✦`, m)
         }
         
         chat.antiNsfw = false
-        await conn.reply(m.chat, `╭─❍「 ✦ 𝚂𝚘𝚢𝙼𝚊𝚢𝚌𝚘𝚕 <𝟹 ✦ 」
+        await conn.reply(m.chat, `╭─❍「 ✦ ᴛᴀɴᴊɪʀᴏ-ʙᴏᴛ ✦ 」
 │
 ├─ ❌ *Escudo Anti-NSFW Desactivado*
 │
