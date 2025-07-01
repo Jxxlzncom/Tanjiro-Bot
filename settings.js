@@ -26,7 +26,7 @@ global.namechannel2 = '𝖙𝖆𝖓𝖏𝖎𝖗𝖔 𝖐𝖆𝖒𝖆𝖉𝖔'
 global.namegrupo = '𝖙𝖆𝖓𝖏𝖎𝖗𝖔 𝖐𝖆𝖒𝖆𝖉𝖔'
 global.namecomu = '𝖙𝖆𝖓𝖏𝖎𝖗𝖔 𝖐𝖆𝖒𝖆𝖉𝖔'
 global.apodo = 'ᴅᴀʀᴋ ʙʀxᴢᴢᴢ'
-global.repo = 'SoySapo6/Tanjiro-Bot'
+global.repo = 'Jxxlzncom/Tanjiro-Bot'
 global.pais = '⊹˚• Perú •˚⊹'
 global.github = 'Jxxlzncom'
 
