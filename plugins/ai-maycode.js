@@ -200,12 +200,12 @@ async function fetchMayCode(version, prompt, imageUrl = null) {
   if (imageUrl) {
     paths = {
       v1: `/api/maycode/models/v2/?message=${encodeURIComponent(prompt)}&image=${encodeURIComponent(imageUrl)}`,
-      v2: `/api/maycode/models/v2/?message=${encodeURIComponent(prompt)}&image=${encodeURIComponent(imageUrl)}`
+      v3: `/api/maycode/models/v3/?message=${encodeURIComponent(prompt)}&image=${encodeURIComponent(imageUrl)}`
     };
   } else {
     paths = {
       v1: `/api/maycode/models/v2/?message=${encodeURIComponent(prompt)}`,
-      v2: `/api/maycode/models/v2/?message=${encodeURIComponent(prompt)}`
+      v3: `/api/maycode/models/v3/?message=${encodeURIComponent(prompt)}`
     };
   }
 
