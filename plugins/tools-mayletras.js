@@ -3,13 +3,13 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
 
     if (!args[0] || !args.join(' ').includes('|')) {
-        return m.reply('⚠️ Usa el formato correcto:\n*mayletras Artista | Canción*\n\nEjemplo:\nmayletras Coldplay | Yellow\n\n> Comando hecho por SoyMaycol <3')
+        return m.reply('⚠️ Usa el formato correcto:\n*darkletras Artista | Canción*\n\nEjemplo:\nmayletras Coldplay | Yellow\n\n> Comando hecho por SoyMaycol <3')
     }
 
     let [artista, cancion] = args.join(' ').split('|').map(v => v.trim())
   
     if (!artista || !cancion) {
-        return m.reply('⚠️ Faltan datos, recuerda:\n*mayletras Artista | Canción*\n\n> Comando hecho por SoyMaycol <3')
+        return m.reply('⚠️ Faltan datos, recuerda:\n*darkletras Artista | Canción*\n\n> Comando hecho por SoyMaycol <3')
     }
 
     let res = await fetch(`https://api.lyrics.ovh/v1/${encodeURIComponent(artista)}/${encodeURIComponent(cancion)}`)
