@@ -29,7 +29,7 @@ ${data.result.trim()}
     console.error('[ERROR en Hanako IA]', err);
     conn.reply(m.chat, `
 ✘ 「 𝑶𝑯 𝑵𝑶... 」
-➤ Hanako-kun no pudo conectarse con la sabiduría.
+➤ Tanjiro-Bot no pudo conectarse con la sabiduría.
 ➤ Intenta de nuevo más tarde.`, m);
   }
 };
