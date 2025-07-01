@@ -1,29 +1,53 @@
+// Usando Adonix API para stats y NightAPI para descargar xD
+// GitHub: SoySapo6
 import fetch from 'node-fetch';
 
-var handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) {
-        return conn.reply(m.chat, `${emoji} Por favor, ingresa un enlace de TikTok.`, m);
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text) return m.reply(`🌸 Ingresa el enlace de un video de TikTok.\n\n📌 *Ejemplo:*\n${usedPrefix + command} https://vm.tiktok.com/xxxxxx`);
+
+  try {
+    await m.react('🎴');
+
+    const adonixApi = `https://theadonix-api.vercel.app/api/tiktok?url=${encodeURIComponent(text)}`;
+    const statsRes = await fetch(adonixApi);
+    const statsData = await statsRes.json();
+
+    if (!statsData?.result?.video) {
+      await m.react('❌');
+      return m.reply('❌ No se pudo obtener los detalles del video.');
     }
 
-    try {
-        await conn.reply(m.chat, `${emoji} Espere un momento, estoy descargando su video...`, m);
+    const { title, author, thumbnail, duration, likes, comments, shares, views } = statsData.result;
 
-        const tiktokData = await tiktokdl(args[0]);
+    const caption = `「✦」Descargando *${title}*
+ღ *Autor :* ${author.name} (@${author.username})
+❐ *Duración :* ${duration} segundos
+★ *Likes :* ${likes}
+✿ *Comentarios :* ${comments}
+🜲 *Compartidos :* ${shares}
+⌨︎︎ *Vistas :* ${views}
+☁︎ *Servidor :* NightAPI & Adonix`;
 
-        if (!tiktokData || !tiktokData.data || !tiktokData.data.play) {
-            return conn.reply(m.chat, "Error: No se pudo obtener el video.", m);
-        }
+    await conn.sendMessage(m.chat, {
+      image: { url: thumbnail },
+      caption
+    }, { quoted: m });
 
-        const videoURL = tiktokData.data.play;
+    const nightApi = `https://nightapi.is-a.dev/api/tiktok?url=${encodeURIComponent(text)}`;
 
-        if (videoURL) {
-            await conn.sendFile(m.chat, videoURL, "tiktok.mp4", `${emoji} Aquí tienes ฅ^•ﻌ•^ฅ`, m);
-        } else {
-            return conn.reply(m.chat, "No se pudo descargar.", m);
-        }
-    } catch (error1) {
-        return conn.reply(m.chat, `Error: ${error1.message}`, m);
-    }
+    await conn.sendMessage(m.chat, {
+      video: { url: nightApi },
+      mimetype: 'video/mp4',
+      fileName: `${author.username || 'video'}.mp4`
+    }, { quoted: m });
+
+    await m.react('✅');
+
+  } catch (e) {
+    console.error(e);
+    await m.react('⚠️');
+    m.reply(`❌ Error al procesar el enlace.`);
+  }
 };
 
 handler.help = ['tiktok'].map((v) => v + ' *<link>*');
@@ -35,9 +59,3 @@ handler.coin = 2;
 handler.limit = true;
 
 export default handler;
-
-async function tiktokdl(url) {
-    let tikwm = `https://www.tikwm.com/api/?url=${url}?hd=1`;
-    let response = await (await fetch(tikwm)).json();
-    return response;
-}
