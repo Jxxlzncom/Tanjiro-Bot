@@ -13,7 +13,7 @@ const handler = async (m, { conn, text }) => {
 
         const gifPrincipal = gifs[0]
 
-        let decorado = `✎ 𝐆𝐢𝐟𝐬 𝐃𝐞 𝐇𝐚𝐧𝐚𝐤𝐨-𝐁𝐨𝐭 ✎\n\n`
+        let decorado = `✎ 𝙂𝙞𝙛𝙨 𝙙𝙚 𝙩𝙖𝙣𝙟𝙞𝙧𝙤-𝙗𝙤𝙩 ✎\n\n`
         decorado += `Hola jeje ^^ Aquí tienes tus gifs sobre: *${text}* UwU\n\n`
         decorado += `> Hecho por *_ᴅᴀʀᴋ ʙʀxᴢᴢᴢ <3_*\n\n`
         decorado += `~*Encontré ${gifs.length} gifs super lindos para ti*~\n\n`
