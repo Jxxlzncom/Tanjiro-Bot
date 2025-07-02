@@ -30,7 +30,7 @@ let handler = async (m, { conn, args }) => {
 
 ╰─────❖ 𝓜𝓮𝓷𝓾 ❖─────╯
 
-✦ 𝙸𝙽𝙵𝙾 𝙳𝙴 𝚂𝚄𝙼𝙾𝙽 ✦
+✦ 𝙄𝙣𝙛𝙤 𝙩𝙖𝙣𝙟𝙞𝙧𝙤 ✦
 
 💻 Sistema: Multi-Device
 👤 Espíritu: @${userId.split('@')[0]}
@@ -38,7 +38,7 @@ let handler = async (m, { conn, args }) => {
 👥 Espíritus: ${totalreg} Espiritus
 ⌚ Hora: ${hour}
 
-> Hecho con amor por: *_${global.apodo}_* y *_SoyMaycol <3_* (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤
+> Hecho con amor por: *_${global.apodo}_*
 
 ≪──── ⋆𓆩✧𓆪⋆ ────≫
 
