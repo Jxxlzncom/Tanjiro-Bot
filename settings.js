@@ -76,7 +76,7 @@ global.video2 = [
   'https://files.catbox.moe/095s6m.mp4'
 ]
 // ╭── ✦ Enlaces Oficiales ✦ ──⊷
-global.gp1 = 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
+global.gp1 = 'https://chat.whatsapp.com/HnKnpD4uofJHhqVB3D4F7V?mode=ac_c'
 global.comunidad1 = 'https://whatsapp.com/channel/0029Vb5OYfu3bbV5DT6Biy12'
 global.channel = global.comunidad1
 global.channel2 = global.comunidad1
