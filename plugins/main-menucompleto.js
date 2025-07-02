@@ -75,7 +75,7 @@ ${estiloSeleccionado.infoTitle}
 
 ${estiloSeleccionado.footer}
 
-> Hecho con amor por: *_${global.apodo}_* (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤
+> Hecho con amor por: *_${global.apodo}_*
 `.trim()
 
   let categoriesEntries = Object.entries(categories)
