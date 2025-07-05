@@ -37,7 +37,7 @@
     "@ibaraki-douji/pixivts": "^2.4.1",
     "@soymaycol/maybailyes": "^1.0.0",
     "@soymaycol/mayhtml": "^1.0.0",
-    "@soymaycol/maytube": "^1.0.7",
+    "@soymaycol/maytube": "^1.0.9",
     "@vitalets/google-translate-api": "^8.0.0",
     "@xct007/frieren-scraper": "^0.0.2",
     "acrcloud": "^1.4.0",
